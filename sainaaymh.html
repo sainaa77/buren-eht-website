@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work hard</title>
+<img src="man.png" alt=""> <h1>Sainu!</h1>
+<h3>sainaagiin anhnii buren eh bolson website</h3>
+<h2>tun udahgui...</h2>
+<div class="button"><a href="#"></a>Negdeh</div>
+</head>
+<body>
+  <style>
+    body{
+      background-image: url("wp4219851.webp"); 
+      background-color: #cccccc00;
+    }
+    h1{
+      color: aliceblue;
+      font-weight: lighter;
+      font-size: 4cm;
+    }
+    h3{
+      color: white;
+      font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    img{
+      width: 4cm;
+  
+    }
+    h2{
+      color: white;
+      font-size: larger;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .button {
+  background-color: orangered;
+  border: none;
+  color: black;
+  padding: 20px;
+  width: 3cm;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+}
+.button {border-radius: 12px;}
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+  color: azure;
+}
+</style>
+</head>
+<body>
+  <p>negdeh link tsatsagttal..</p>
+
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("dec 31 , 2024 15:37:25").getTime("");
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "өдөр" + hours + "цаг"
+  + minutes + "минут " + seconds + "секунд ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+  </style>
+  
+</body>
+</html>
